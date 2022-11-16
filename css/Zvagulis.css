@@ -1,0 +1,165 @@
+body{
+    background-image: url("../bild/fons.jpg");
+}
+header{
+    margin: 5px;
+}
+#legologo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+#linija1{
+    height: 30px;
+    border-style: solid;
+    border-color: #990000;
+    border-width: 0 0 7px 0;
+    border-radius: 20px;
+    border-top: 25px;
+}
+#baneris{
+    height: 288px;
+    position: relative;
+    overflow: hidden; 
+}
+#baneris > div{
+    height: 100%;
+    width: 200%;
+    background-image: url(../bild/slaidsovs.jpg);
+    position: absolute;
+    animation: biditBaneri 20s linear infinite;
+}
+@keyframes biditBaneri{
+    0%{left: 0;}
+    100%{left: -1000px;}
+}
+aside{
+    float: left;
+    width: 15%;
+    background: darkred;
+    border-radius: 10px;
+    margin: 20px 0 30px 0;
+    font-size: 1.5vw;
+    text-align: center;
+    font-weight: bold;
+}
+nav > ul{
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    background: linear-gradient(to bottom right, #962cd3, #45da8f);
+}
+#aktivaSadala{
+    background-color: #555;
+    color: white;
+}
+.navigacija{
+    display: block;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-top: 2px solid darkred;
+}
+.navigacija:hover:not(#aktivaSadala){
+    background: linear-gradient(to bottom right, #dacb45, #dd6e23);
+    color: white;
+}
+article{
+    float: right;
+    width: 80%;
+    background: rgb(223, 129, 74);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0 10px 0;
+    text-align: left;
+    font-family: "David";
+    color: black;
+    font-size: 1.5vw;
+}
+
+h1, h3{
+    text-align: center;
+    font-family: "Comic sans MS";
+    color: rgb(206, 197, 72);
+    -webkit-text-scroll-widht: 2px;
+    -webkit-text-stroke-color: rgb(216, 78, 23);
+}
+#izvele{
+    list-style-image: url("../bild/aizzime.png");
+    margin-left: 50px;
+    background-color: none;
+    width: auto;
+    margin-top: 0;
+}
+#izvele >li >a{
+    text-decoration: none;
+    color: black;
+
+}
+#izvele >li >a:hover{
+    font-size: 110%;
+    color: darkred;
+}
+#kreis{
+    float: left;
+    width: 20rem;
+    height: 20rem;
+    padding: 3rem;
+}
+.vid{
+    margin-left: 20rem;
+}
+#labi{
+    float: right;
+    width: 20rem;
+    height: 20rem;
+}
+.video{
+position: absolute;
+float: right;
+}
+.teksts{
+    position: absolute;
+    float: left;
+    margin-left: 26rem;    
+}
+.klepus{
+    position: relative;
+    margin-top: 360px
+}
+.vidcusk{
+    margin-left: 10rem;
+}
+.vidl{
+    float: left;
+}
+iframe{
+    border: none;
+    height: 300px;
+    width: 480px;
+}
+.klepus p{
+    font-weight: bold;
+}
+#virt{
+    float: left;
+    width: 35%;
+    padding-right: .3rem;
+}
+section{
+    border: solid;
+    border-width: 3px;
+    border-left: none;
+    border-right: none;
+}
+section p{
+    padding-left: 5rem;
+}
+.vidiks{
+    width: 100%;
+    height: 720px;
+    border: #555 solid;
+    border-width: 5px;
+    padding: 2px;
+}

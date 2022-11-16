@@ -1,0 +1,277 @@
+body{
+    background-image: url("../bild/fons.jpg");
+}
+
+header{
+    margin: 5px;
+}
+
+#legologo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
+#linija1{
+    height: 30px;
+    border-style: solid;
+    border-color: #990000;
+    border-width: 0 0 7px 0;
+    border-radius: 20px;
+    border-top: 25px;
+}
+
+#baneris{
+    height: 288px;
+    position: relative;
+    overflow: hidden; 
+}
+
+#baneris > div{
+    height: 100%;
+    width: 200%;
+    background-image: url(../bild/slaidsovs.jpg);
+    position: absolute;
+    animation: biditBaneri 20s linear infinite;
+}
+
+@keyframes biditBaneri{
+    0%{left: 0;}
+    100%{left: -1000px;}
+}
+
+aside{
+    float: left;
+    width: 15%;
+    background: darkred;
+    border-radius: 10px;
+    margin: 20px 0 30px 0;
+    font-size: 1.5vw;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav > ul{
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    background: linear-gradient(to bottom right, #962cd3, #45da8f);
+}
+
+#aktivaSadala{
+    background-color: #555;
+    color: white;
+}
+
+.navigacija{
+    display: block;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-top: 2px solid darkred;
+}
+
+.navigacija:hover:not(#aktivaSadala){
+    background: linear-gradient(to bottom right, #45da8f, #962cd3);
+    color: white;
+}
+
+article{
+    float: right;
+    width: 80%;
+    background: rgb(206, 206, 85);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0 10px 0;
+    text-align: left;
+    font-family: "David";
+    color: black;
+    font-size: 1.5vw;
+}
+
+h1, h3{
+    text-align: center;
+    font-family: "Comic sans MS";
+    color: rgb(245, 248, 58);
+    -webkit-text-scroll-widht: 2px;
+    -webkit-text-stroke-color: rgb(247,222,6);
+}
+
+#komplektabilde, #minidators1{
+    float: right;
+    width: 40%;
+    height: 40%;
+    margin-left: 20px;
+}
+
+#saraksts1{
+    list-style-image: url("../bild/aizzime.png");
+    margin-left: 50px;
+    background-color: none;
+    width: auto;
+    margin-top: 0;
+}
+
+#sarasksts1 >li >a{
+    text-decoration: none;
+    color: black;
+
+}
+
+#saraksts1 >li >a:hover{
+    font-size: 110%;
+    color: darkred;
+}
+
+#video1{
+    float: right;
+    width: 30vw;
+    height: 26vw;
+    margin-top: -23vw;
+}
+
+h3{
+    color: rgb(221, 76, 8);
+    -webkit-text-stroke-color: darkred;
+}
+
+#minidators2{
+    float: left;
+    width: 40%;
+    height: 40%;
+    margin-right: 40px;
+}
+
+.saraksts2{
+    list-style-image:url("../bild/aizzime2.png");
+}
+
+#motors1, #motorsm{
+    float: left;
+    width: 20%;
+    height: 20%;
+    margin-right: 40px;
+}
+
+#motorsm{
+clear: both;
+}
+
+#video2{
+    margin-top: -20vw;
+}
+
+#video2, .bilder, .videor{
+    float: right;
+    width: 20vw;
+    height: 16vw;
+    margin-right: 20px;
+}
+
+.video1, .bilde1{
+    float: left;
+    width: 20vw;
+    height: 16vw;
+    margin-right: 40px;
+}
+footer{
+    clear: both;
+}
+#linija2{
+    margin-bottom: -31px;
+    border-width: 7px 0 0 0;
+}
+
+#autortiesibas{
+    font-family: Impact;
+    text-align: center;
+}
+#sattels1, #svideo1{
+    float: left;
+    width: 40%;
+    height: 40%;
+    margin-right: 20px;
+    border-radius: 40px 0 40px 0;
+    border: 10px solid rgb(65, 62, 62);
+}
+#svideo1{
+    float: right;
+    width: 28vw;
+    height: 22vw;
+    margin-left: 20px;
+    border-radius: 0 40px 0 40px;
+}
+#sattels3{
+    float: left;
+    width: 15%;
+    height: 15%;
+}
+#sattels3:hover{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.spele1{
+    float: left;
+    width: 50%;
+    border-radius: 0 40px 40px 0;
+}
+.speler{
+    float: right;
+    width: 50%;
+    border-radius: 40px 0 0 40px;
+}
+.konteiners1{
+    position: relative;
+    float: left;
+    width: 40%;
+}
+.konteinersr{
+    position: relative;
+    float: right;
+    width: 40%;
+}
+.spelesbilde{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.parklajs{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+.konteiners1:hover > .parklajs, .konteinersr:hover > .parklajs{
+    bottom: 0;
+    height: 100%;
+}
+.bildeteksts{
+    text-align: center;
+    color: white;
+    font-size: 1.5vw;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%,-50%);
+}
+.palabi{
+    margin-left: 1%;
+    background: black;
+    width: 28vw;
+    height: 19.5vw;
+}
+.pakreisi{
+    margin-right: 1%;
+    background: black;
+    width: 28vw;
+    height:fit-content 19.5vw;
+}
